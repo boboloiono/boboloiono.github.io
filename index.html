@@ -10,11 +10,18 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background: linear-gradient(135deg, #582707, #972d07, #ff4b3e, #ffb20f, #ffe548);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
       color: #333;
     }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
     header {
-      background: #2c3e50;
+      background: rgba(44, 62, 80, 0.9);
       color: #fff;
       padding: 2rem;
       text-align: center;
@@ -23,7 +30,7 @@
       max-width: 900px;
       margin: 2rem auto;
       padding: 1rem;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.95);
       border-radius: 8px;
     }
     h1, h2 {
@@ -34,17 +41,22 @@
     }
     .links a {
       margin-right: 1rem;
-      color: #2980b9;
+      color: #ffe548;
     }
     .icon {
       margin-right: 6px;
+    }
+    .profile-img {
+      max-width: 160px;
+      border-radius: 50%;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Pei-Yu Lin</h1>
-    <p>Master's in Electrical Engineering @ RWTH Aachen | Digital Design & AI Accelerators</p>
+    <p>Master's in Electrical Engineering @ RWTH Aachen | Digital Design & AI Accelerators Enthusiast</p>
     <img src="profile.jpg" alt="Pei-Yu Lin Profile Photo" class="profile-img" />
     <div class="links">
       <a href="mailto:peggy2035344@gmail.com"><i class="fas fa-envelope icon"></i>Email</a>
